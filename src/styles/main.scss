@@ -1,10 +1,17 @@
 @use 'hero';
 @use 'variaveis';
+@use 'films';
+
+@font-face {
+    font-family: Promethean;
+    src: url(../../assets/font/Prometheansuperital.ttf);
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Promethean, sans-serif;
 }
 
 body {
