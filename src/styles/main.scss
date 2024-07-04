@@ -1,5 +1,39 @@
-$bgColor: rgba(0, 255, 255, 0.651);
+@use 'hero';
+@use 'variaveis';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$corDeFundo;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextPrincipal;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+}
+
+.text--normal {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.title--normal {
+    @include title(44px);
+    color: variaveis.$corTextPrincipal;
+}
+
+.title {
+    @include title;
 }

@@ -1,0 +1,40 @@
+@use 'variaveis';
+
+.hero {
+    
+    padding: 5.6vw;
+    min-height: 100vh;
+    background-image: url(../images/hero/vingadores.jpg);
+    text-align: center;
+    background-size: cover;
+    
+    
+
+    &__content {
+        max-width: 630px;
+        padding-top: 120px;
+        
+
+        &__branding {
+            max-width: 600px;
+            margin: 0 auto;
+
+        }
+
+        h3 {
+            letter-spacing: 10px;
+            text-decoration: underline;
+        }
+
+        &__titles {
+            margin-left: 20px;
+            color: variaveis.$corTextPrincipal;
+            list-style: none;
+
+            &__title {
+                margin-left: 25px;
+            }
+
+        }            
+    }
+}
