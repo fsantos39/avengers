@@ -13,7 +13,7 @@
                 <img src="./dist/images/avengers_logo.png" alt="Logo Vingadores">
             </h1>
             <ul class="hero__content__titles">
-                <h3 class="title--normal">Todos os Títulos</h3>
+                <h3 class="title--normal">All Titles</h3>
                 <li class="text--normal hero__content__titles__title">
                     Avangers - Lançamento em 2012
                 </li>
@@ -31,36 +31,71 @@
     </section>
     <section class="films">
         <nav class="films__tabs">
-            <button class="films__tabs__button films__tabs__button--is-active">
-                Filmes da Franquia
+            <button data-tab-button="filmes_franquia" class="films__tabs__button films__tabs__button--is-active">
+                Franchise Films
             </button>
-            <button class="films__tabs__button">
-                Homem de Ferro / Capitão América
+            <button data-tab-button="homem_capitao" class="films__tabs__button">
+                Iron Man / Captain America
             </button>
-            <button class="films__tabs__button">
-                Outros Vingadores
+            <button data-tab-button="outros_vingadores" class="films__tabs__button">
+                Other Avengers
             </button>
         </nav>
-        <ul class="films__list">
+        <ul data-tab-id="filmes_franquia" class="films__list films__list--is-active">
             <li class="films__list__item">
                 <img src="./dist/images/film_franquia/ving_1.jpg" alt="Capa Vingadores Um">
             </li>
             <li class="films__list__item">
-                <img src="./dist/images/film_franquia/ving_1.jpg" alt="Capa Vingadores Um">
+                <img src="./dist/images/film_franquia/ving_ultron.jpg" alt="Vingadores Era Ultron">
             </li>
             <li class="films__list__item">
-                <img src="./dist/images/film_franquia/ving_1.jpg" alt="Capa Vingadores Um">
+                <img src="./dist/images/film_franquia/ving_ginfinita.jpg" alt="Vingadores Querra Infinita">
             </li>
             <li class="films__list__item">
-                <img src="./dist/images/film_franquia/ving_1.jpg" alt="Capa Vingadores Um">
+                <img src="./dist/images/film_franquia/ving_ultimato.jpg" alt="Vingadores Ultimato">
+            </li>
+        </ul>
+        <ul data-tab-id="homem_capitao" class="films__list">
+            <li class="films__list__item">
+                <img src="./dist/images/outros_titulos/homem_de_ferro_1.png" alt="Homem de Ferro 1">
             </li>
             <li class="films__list__item">
-                <img src="./dist/images/film_franquia/ving_1.jpg" alt="Capa Vingadores Um">
+                <img src="./dist/images/outros_titulos/homem_de_ferro_2.png" alt="Capa Vingadores Um">
             </li>
             <li class="films__list__item">
-                <img src="./dist/images/film_franquia/ving_1.jpg" alt="Capa Vingadores Um">
+                <img src="./dist/images/outros_titulos/homem_de_ferro_3.png" alt="Capa Vingadores Um">
+            </li>
+            <li class="films__list__item">
+                <img src="./dist/images/outros_titulos/capitao_america_1.jpg" alt="Capa Vingadores Um">
+            </li>
+            <li class="films__list__item">
+                <img src="./dist/images/outros_titulos/capitao_america_2.jpg" alt="Capa Vingadores Um">
+            </li>
+            <li class="films__list__item">
+                <img src="./dist/images/outros_titulos/capitao_america_3.jpg" alt="Capa Vingadores Um">
+            </li>
+        </ul>
+        <ul data-tab-id="outros_vingadores" class="films__list">
+            <li class="films__list__item">
+                <img src="./dist/images/outros_titulos/thor_1.jpg" alt="Thor 1">
+            </li>
+            <li class="films__list__item">
+                <img src="./dist/images/outros_titulos/thor_o_mundo_sombrio.jpg" alt="Capa Vingadores Um">
+            </li>
+            <li class="films__list__item">
+                <img src="./dist/images/outros_titulos/thor-ragnarok.jpg" alt="Capa Vingadores Um">
+            </li>
+            <li class="films__list__item">
+                <img src="./dist/images/outros_titulos/homem_formiga_1.jpg" alt="Capa Vingadores Um">
+            </li>
+            <li class="films__list__item">
+                <img src="./dist/images/outros_titulos/pantera_negra.jpg" alt="Capa Vingadores Um">
+            </li>
+            <li class="films__list__item">
+                <img src="./dist/images/outros_titulos/capita_marvel.jpg" alt="Capa Vingadores Um">
             </li>
         </ul>
     </section>
+    <script src="./src/main.js"></script>
 </body>
 </html>
