@@ -1,0 +1,32 @@
+.header {
+    position: sticky;
+    top:0;
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    &__emblem {
+        max-width: 100px;
+        width: 100%;
+        margin: 5px;   
+    
+    }
+
+    &__links {
+        display: flex;
+
+        &__item {
+            margin: 5px;
+            list-style: none;
+            cursor: pointer;
+        }
+    }
+
+    .button {
+        height: 40px;
+    }
+}

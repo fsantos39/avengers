@@ -1,6 +1,9 @@
 @use 'hero';
 @use 'variaveis';
 @use 'films';
+@use 'viloes';
+@use 'footer';
+@use 'header';
 
 @font-face {
     font-family: Promethean;
@@ -12,13 +15,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Promethean, sans-serif;
+    list-style: none;
 }
 
 body {
     background-color: variaveis.$corDeFundo;
 }
 
-@mixin text($fontSize: 16px) {
+@mixin text($fontSize: 11px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
     color: variaveis.$corTextPrincipal;
@@ -37,10 +41,35 @@ body {
 }
 
 .title--normal {
-    @include title(44px);
+    @include title(35px);
     color: variaveis.$corTextPrincipal;
 }
 
 .title {
     @include title;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextPrincipal;
+    background-color: variaveis.$corDeFundo;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corTextPrincipal;
+
+    &--dark {
+        background-color: (variaveis.$corBotaoDark, 0.8);
+
+        &:hover {
+            background-color: variaveis.$corTextPrincipal;
+            color: variaveis.$corDeFundo;
+        }
+    }
 }

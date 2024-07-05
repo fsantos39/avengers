@@ -7,11 +7,26 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <section class="hero">
-        <div class="hero__content">
-            <h1 class="hero__content__branding">
-                <img src="./dist/images/avengers_logo.png" alt="Logo Vingadores">
+    <header class="header">
+        <div class="header__container">
+            <h1 >
+                <a href="#topo"><img class="header__emblem" src="dist/images/avengers_emblem.png" alt="Emblema Vingadores"></a>
             </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#films" class="button button--dark">Films</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#viloes" class="button button--dark">Villains</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero" id="topo">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./dist/images/avengers_logo.png" alt="Logo Vingadores">
+            </div>
             <ul class="hero__content__titles">
                 <h3 class="title--normal">All Titles</h3>
                 <li class="text--normal hero__content__titles__title">
@@ -29,7 +44,7 @@
             </ul>
         </div>
     </section>
-    <section class="films">
+    <section class="films" id="films">
         <nav class="films__tabs">
             <button data-tab-button="filmes_franquia" class="films__tabs__button films__tabs__button--is-active">
                 Franchise Films
@@ -96,6 +111,52 @@
             </li>
         </ul>
     </section>
+    <section class="viloes" id="viloes">
+        <img src="./dist/images/viloes.jpg" alt="Vilões da Saga Vingadores">
+        <div class="viloes__content">
+            <h2 class="viloes__content__title title--normal">Villains</h2>
+            <ul class="viloes__list">
+                <li class="viloes__list__vilao title">
+                    Loki
+                    <p class="text">
+                        Loki was the villain responsible for the first meeting of the Avengers,
+                        group of superheroes formed by his arch-enemy and adopted brother.
+                    </p>
+                </li>
+                <li class="viloes__list__vilao title">
+                    Ultron
+                    <p class="text">
+                        Ultron was an artificial intelligence peacekeeping program created by Iron Man using decrypted code derived from 
+                        the Mind Stone enclosed in Loki's Scepter, with the purpose of protecting all humanity, but Ultron considered humanity 
+                        itself to be Earth's greatest threat.
+                    </p>
+                </li>
+                <li class="viloes__list__vilao title">
+                    Thanos
+                    <p class="text">
+                        Thanos is from a planet called Titan and due to its super population he proposed as a solution to eliminate half of the people on the planet,
+                        having his proposal rejected he was expelled from the planet. Thanos witnessed the death of his people until he was the only survivor of the Titan race.
+                        After seeing what happened to Titan, Thanos concluded that other planets would eventually suffer the same fate,
+                        and believed it was his destiny to eliminate half of the universe's population so that the survivors could prosper.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__emblem" src="dist/images/avengers_emblem.png" alt="Emblema Avangers">
+            <ul class="footer__container__adress">
+                <li>
+                    &copy; All rights reserved - Developed by Fernando Santos
+                </li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+
     <script src="./src/main.js"></script>
 </body>
 </html>

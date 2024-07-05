@@ -1,0 +1,29 @@
+.viloes {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    &__content {
+        padding: 0 2vw;
+
+        &__title {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__list {
+        list-style: none;
+
+        &__vilao {
+            p{
+                margin-left: 15px;
+            }
+        }
+    }
+}

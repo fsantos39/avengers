@@ -1,0 +1,25 @@
+@use 'variaveis';
+
+.footer {
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        &__adress {
+            margin-bottom: 15px;
+            list-style: none;
+            font-size: 14px;
+            color: variaveis.$corTextPrincipal;
+        }
+    }
+
+    &__emblem {
+        margin-bottom: 10px;
+        justify-content: center;
+        width: 10%;
+    }
+
+
+}
