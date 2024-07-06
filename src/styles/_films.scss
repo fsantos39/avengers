@@ -3,18 +3,27 @@
 .films {
     padding: 2vw 7.0vw;
 
+    // Esta media query que deveria transformar toda a 
+    //"class films" em display block não suge efeito 
+    
+    @media screen and (max-width:768) {
+        display: block;
+
+    }
+
     &__list {
         margin-top: 44px;
         display: none;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
 
-        
         &--is-active {
             display: grid;
+
         }
 
         &__item {
+
             img {
                 max-width: 100%;
                 border-radius: 6px;
@@ -26,6 +35,7 @@
         display: flex;
         justify-content: center;
 
+        
 
         &__button {
             color: variaveis.$corTextPrincipal;
