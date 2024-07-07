@@ -4,6 +4,10 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+
     img {
         max-width: 100%;
         border-radius: 15px;
